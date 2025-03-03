@@ -229,6 +229,120 @@ route_entry routes[RTSIZE];
 
 uint32_t myips[MYIPSIZE];
 
+
+char * rta_enum (unsigned int rta_type, char* str)
+{
+char * chtype = NULL;
+switch (rta_type)
+  {
+    case RTA_UNSPEC:
+        chtype = "RTA_UNSPEC";
+        break;
+    case RTA_DST:
+        chtype = "RTA_DST";
+        break;
+    case RTA_SRC:
+        chtype = "RTA_SRC";
+        break;
+    case RTA_IIF:
+        chtype = "RTA_IIF";
+        break;
+    case RTA_OIF:
+        chtype = "RTA_OIF";
+        break;
+    case RTA_GATEWAY:
+        chtype = "RTA_GATEWAY";
+        break;
+    case RTA_PRIORITY:
+        chtype = "RTA_PRIORITY";
+        break;
+    case RTA_PREFSRC:
+        chtype = "RTA_PREFSRC";
+        break;
+    case RTA_METRICS:
+        chtype = "RTA_METRICS";
+        break;
+    case RTA_MULTIPATH:
+        chtype = "RTA_MULTIPATH";
+        break;
+    case RTA_PROTOINFO:
+        chtype = "RTA_PROTOINFO";
+        break;
+    case RTA_FLOW:
+        chtype = "RTA_FLOW";
+        break;
+    case RTA_CACHEINFO:
+        chtype = "RTA_CACHEINFO";
+        break;
+    case RTA_SESSION:
+        chtype = "RTA_SESSION";
+        break;
+    case RTA_MP_ALGO:
+        chtype = "RTA_MP_ALGO";
+        break;
+    case RTA_TABLE:
+        chtype = "RTA_TABLE";
+        break;
+    case RTA_MARK:
+        chtype = "RTA_MARK";
+        break;
+    case RTA_MFC_STATS:
+        chtype = "RTA_MFC_STATS";
+        break;
+    case RTA_VIA:
+        chtype = "RTA_VIA";
+        break;
+    case RTA_NEWDST:
+        chtype = "RTA_NEWDST";
+        break;
+    case RTA_PREF:
+        chtype = "RTA_PREF";
+        break;
+    case RTA_ENCAP_TYPE:
+        chtype = "RTA_ENCAP_TYPE";
+        break;
+    case RTA_ENCAP:
+        chtype = "RTA_ENCAP";
+        break;
+    case RTA_EXPIRES:
+        chtype = "RTA_EXPIRES";
+        break;
+    case RTA_PAD:
+        chtype = "RTA_PAD";
+        break;
+    case RTA_UID:
+        chtype = "RTA_UID";
+        break;
+    case RTA_TTL_PROPAGATE:
+        chtype = "RTA_TTL_PROPAGATE";
+        break;
+    case RTA_IP_PROTO:
+        chtype = "RTA_IP_PROTO";
+        break;
+    case RTA_SPORT:
+        chtype = "RTA_SPORT";
+        break;
+    case RTA_DPORT:
+        chtype = "RTA_DPORT";
+        break;
+    case RTA_NH_ID:
+        chtype = "RTA_NH_ID";
+        break;
+    case __RTA_MAX:
+        chtype = "__RTA_MAX";
+        break;
+    default:
+        chtype = "other";
+        break;
+  }
+  if (strlen(chtype) < 100) {
+    strcpy(str, chtype);
+  } else {
+    str = NULL;
+  }
+  return str;
+}  
+
 char *ipv4_htoa(uint32_t ip)
 {
     static char buf[INET_ADDRSTRLEN];
@@ -928,6 +1042,8 @@ void nl_debug(void *msg, int len)
     struct rtmsg *rm;
     int i;
     unsigned char *c;
+    char tempch[100];
+    struct nlmsgerr *rerr;
 
     if (debug && verbose)
     {
@@ -936,7 +1052,8 @@ void nl_debug(void *msg, int len)
 	
 	    if (NLMSG_ERROR == rh->nlmsg_type)
 	    {
-		fprintf(stderr, "NLMSG: error\n");
+                rerr = (struct nlmsgerr*)NLMSG_DATA(rh);
+		fprintf(stderr, "NLMSG: error %i\n",rerr->error);
 	    }
 	    else if (NLMSG_DONE == rh->nlmsg_type)
 	    {
@@ -974,7 +1091,7 @@ void nl_debug(void *msg, int len)
 		    rm = NLMSG_DATA(rh);
 		    for (rtattr = (struct rtattr *)RTM_RTA(rm); RTA_OK(rtattr, len); rtattr = RTA_NEXT(rtattr, len))
 		    {
-			fprintf(stderr, "RTA type: %d (%d bytes): ", rtattr->rta_type, rtattr->rta_len);
+			fprintf(stderr, "RTA type: %s (%d bytes): ", rta_enum(rtattr->rta_type,tempch), rtattr->rta_len);
 			for(i=0; i<(rtattr->rta_len - sizeof(struct rtattr)); i++)
 			{
 			    c = (unsigned char *)RTA_DATA(rtattr);
