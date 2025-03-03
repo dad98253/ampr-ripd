@@ -4,7 +4,7 @@
 
 BASEDIR = /usr
 SBINDIR = $(BASEDIR)/sbin
-MANDIR = $(BASEDIR)/man/man1
+MANDIR = /usr/share/man/man1
 SCACHEDIR = /var/lib/ampr-ripd
 
 # no need to run ampr-ripd as root
@@ -23,7 +23,7 @@ CC = gcc
 # Full debug
 #DOPT = -Wall -O2 -D HAVE_DEBUG
 
-CFLAGS ?= -Wall -O2
+CFLAGS ?= -Wall -O2 -DHAVE_DEBUG -DNL_DEBUG
 LDFLAGS ?=
 ampr-ripd:	ampr-ripd.c
 	$(CC) $(CFLAGS) $(DOPT) $(LDFLAGS) $(CPPFLAGS) -o ampr-ripd ampr-ripd.c
