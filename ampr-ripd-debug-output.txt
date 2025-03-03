@@ -1,0 +1,164 @@
+Entry: address 44.185.104.0/24 nexthop 178.254.198.205 metric 1
+NL sending request.
+NLMSG: get route (26)
+RTA type: RTA_DST (8 bytes): 44 185 104 0 
+NL response received.
+NLMSG: request new route/route info (24)
+RTA type: RTA_TABLE (8 bytes): 254 0 0 0 
+RTA type: RTA_DST (8 bytes): 44 185 104 0 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_PREFSRC (8 bytes): 192 168 1 36 
+RTA type: RTA_GATEWAY (8 bytes): 178 254 198 205 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+RTA type: RTA_CACHEINFO (36 bytes): 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+RTA type: RTA_GATEWAY (8 bytes): 72 185 16 183 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+NL sending request.
+NLMSG: delete route (25)
+RTA type: RTA_DST (8 bytes): 44 185 104 0 
+NL sending request.
+NLMSG: request new route/route info (24)
+RTA type: RTA_DST (8 bytes): 44 185 104 0 
+RTA type: RTA_GATEWAY (8 bytes): 178 254 198 205 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+Entry: address 44.185.105.0/24 nexthop 185.245.69.214 metric 1
+NL sending request.
+NLMSG: get route (26)
+RTA type: RTA_DST (8 bytes): 44 185 105 0 
+NL response received.
+NLMSG: request new route/route info (24)
+RTA type: RTA_TABLE (8 bytes): 254 0 0 0 
+RTA type: RTA_DST (8 bytes): 44 185 105 0 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_PREFSRC (8 bytes): 192 168 1 36 
+RTA type: RTA_GATEWAY (8 bytes): 185 245 69 214 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+RTA type: RTA_CACHEINFO (36 bytes): 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+RTA type: RTA_GATEWAY (8 bytes): 72 185 16 183 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+NL sending request.
+NLMSG: delete route (25)
+RTA type: RTA_DST (8 bytes): 44 185 105 0 
+NL sending request.
+NLMSG: request new route/route info (24)
+RTA type: RTA_DST (8 bytes): 44 185 105 0 
+RTA type: RTA_GATEWAY (8 bytes): 185 245 69 214 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+Entry: address 44.185.106.0/24 nexthop 212.72.212.10 metric 1
+NL sending request.
+NLMSG: get route (26)
+RTA type: RTA_DST (8 bytes): 44 185 106 0 
+NL response received.
+NLMSG: request new route/route info (24)
+RTA type: RTA_TABLE (8 bytes): 254 0 0 0 
+RTA type: RTA_DST (8 bytes): 44 185 106 0 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_PREFSRC (8 bytes): 192 168 1 36 
+RTA type: RTA_GATEWAY (8 bytes): 212 72 212 10 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+RTA type: RTA_CACHEINFO (36 bytes): 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+RTA type: RTA_GATEWAY (8 bytes): 72 185 16 183 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+NL sending request.
+NLMSG: delete route (25)
+RTA type: RTA_DST (8 bytes): 44 185 106 0 
+NL sending request.
+NLMSG: request new route/route info (24)
+RTA type: RTA_DST (8 bytes): 44 185 106 0 
+RTA type: RTA_GATEWAY (8 bytes): 212 72 212 10 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+Entry: address 44.185.108.0/27 nexthop 78.46.90.247 metric 1
+NL sending request.
+NLMSG: get route (26)
+RTA type: RTA_DST (8 bytes): 44 185 108 0 
+NL response received.
+NLMSG: request new route/route info (24)
+RTA type: RTA_TABLE (8 bytes): 254 0 0 0 
+RTA type: RTA_DST (8 bytes): 44 185 108 0 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_PREFSRC (8 bytes): 192 168 1 36 
+RTA type: RTA_GATEWAY (8 bytes): 78 46 90 247 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+RTA type: RTA_CACHEINFO (36 bytes): 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+RTA type: RTA_GATEWAY (8 bytes): 72 185 16 183 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+NL sending request.
+NLMSG: delete route (25)
+RTA type: RTA_DST (8 bytes): 44 185 108 0 
+NL sending request.
+NLMSG: request new route/route info (24)
+RTA type: RTA_DST (8 bytes): 44 185 108 0 
+RTA type: RTA_GATEWAY (8 bytes): 78 46 90 247 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+Entry: address 44.185.111.0/24 nexthop 37.143.205.157 metric 1
+NL sending request.
+NLMSG: get route (26)
+RTA type: RTA_DST (8 bytes): 44 185 111 0 
+NL response received.
+NLMSG: request new route/route info (24)
+RTA type: RTA_TABLE (8 bytes): 254 0 0 0 
+RTA type: RTA_DST (8 bytes): 44 185 111 0 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_PREFSRC (8 bytes): 192 168 1 36 
+RTA type: RTA_GATEWAY (8 bytes): 37 143 205 157 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+RTA type: RTA_CACHEINFO (36 bytes): 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+RTA type: RTA_GATEWAY (8 bytes): 72 185 16 183 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+NL sending request.
+NLMSG: delete route (25)
+RTA type: RTA_DST (8 bytes): 44 185 111 0 
+NL sending request.
+NLMSG: request new route/route info (24)
+RTA type: RTA_DST (8 bytes): 44 185 111 0 
+RTA type: RTA_GATEWAY (8 bytes): 37 143 205 157 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+Entry: address 44.185.113.0/24 nexthop 95.168.237.71 metric 1
+NL sending request.
+NLMSG: get route (26)
+RTA type: RTA_DST (8 bytes): 44 185 113 0 
+NL response received.
+NLMSG: request new route/route info (24)
+RTA type: RTA_TABLE (8 bytes): 254 0 0 0 
+RTA type: RTA_DST (8 bytes): 44 185 113 0 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_PREFSRC (8 bytes): 192 168 1 36 
+RTA type: RTA_GATEWAY (8 bytes): 95 168 237 71 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+RTA type: RTA_CACHEINFO (36 bytes): 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+RTA type: RTA_GATEWAY (8 bytes): 72 185 16 183 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+RTA type: RTA_UID (8 bytes): 0 0 0 0 
+NL sending request.
+NLMSG: delete route (25)
+RTA type: RTA_DST (8 bytes): 44 185 113 0 
+NL sending request.
+NLMSG: request new route/route info (24)
+RTA type: RTA_DST (8 bytes): 44 185 113 0 
+RTA type: RTA_GATEWAY (8 bytes): 95 168 237 71 
+RTA type: RTA_OIF (8 bytes): 4 0 0 0 
+RTA type: RTA_METRICS (12 bytes): 8 0 3 0 72 3 0 0 
+(total 848 entries).
+SIGALRM received.
+Checking for expired routes.
+Routes expired: 0.
+Saving routes to disk.
+Saving to encap file not needed.
+(total 848 entries).
+
